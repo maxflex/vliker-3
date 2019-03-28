@@ -1,0 +1,21 @@
+$spacer: 5px;
+$spacing-1: #{$spacer * .25};
+$spacing-2: #{$spacer * .5};
+$spacing-3: $spacer;
+$spacing-4: #{$spacer * 1.5};
+$spacing-5: #{$spacer * 3};
+
+.ma {
+  margin: none;
+}
+
+ // loops through 100 times
+ @for $i from 1 through 5 {
+  // for each $col_#{i} 
+  .mt-#{$i} {
+    margin: #{spacing-}$i 0;
+  }
+  .mr-#{$i} {
+    margin-right: #{spacing-}$i;
+  }
+}

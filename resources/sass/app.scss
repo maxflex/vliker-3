@@ -1,0 +1,123 @@
+@import "~normalize.css";
+@import "~animate.css";
+@import "_variables";
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+// @import '~onsenui/css/onsenui';
+// @import '~onsenui/css/onsen-css-components';
+@import "_spacing";
+@import "_animations";
+@import '~vue-ionicons/ionicons';
+
+body,
+html {
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  min-width: 320px; 
+  overflow: hidden;
+  color: $blue;
+  // background: #314755;  /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to bottom, #26a0da, #314755);  /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to bottom, #26a0da, #314755); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+* {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+button {
+  padding: 0 12px;
+  outline: none;
+}
+
+#app {
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.ma {
+  &-0 {
+    margin: 0;
+  }
+}
+
+.mt {
+  &-1 {
+    margin-top: $spacing-1;
+  }
+  &-2 {
+    margin-top: $spacing-2;
+  }
+  &-3 {
+    margin-top: $spacing-3;
+  }
+}
+
+.mr {
+  &-1 {
+    margin-right: $spacing-1;
+  }
+  &-2 {
+    margin-right: $spacing-2;
+  }
+  &-3 {
+    margin-right: $spacing-3;
+  }
+}
+
+.text {
+  &-red {
+    color: $red;
+  }
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.no-opacity {
+  opacity: 0 !important;
+}
+
+.opacity-hover {
+  cursor: pointer;
+  color: $grey;
+  opacity: .7;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.relative {
+  position: relative;
+}
+
+.small {
+  font-size: 12px;
+}
+
+.text-placeholder {
+  height: 14px;
+  display: inline-block;
+  &_with-icon {
+    height: 17px;
+  }
+}
+
+.flex-items {
+  display: flex;
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.grey-link {
+  color: #939393;
+  text-decoration: none;
+  cursor: pointer !important;
+  &:hover {
+    text-decoration: underline;
+  }
+}

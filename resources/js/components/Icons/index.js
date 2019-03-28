@@ -1,0 +1,6 @@
+export const Comment = require('./Comment')
+export const Like = require('./Like')
+export const Subscribe = require('./Subscribe')
+export const Spinner = require('./Spinner')
+export const HeartRed = require('./HeartRed')
+export const HeartOutline = require('./HeartOutline')
